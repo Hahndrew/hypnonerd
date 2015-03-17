@@ -10,10 +10,10 @@
 		49C22AA31A9E109B00583926 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C22AA21A9E109B00583926 /* main.m */; };
 		49C22AA61A9E109B00583926 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C22AA51A9E109B00583926 /* AppDelegate.m */; };
 		49C22AA91A9E109B00583926 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C22AA81A9E109B00583926 /* ViewController.m */; };
-		49C22AAC1A9E109B00583926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C22AAA1A9E109B00583926 /* Main.storyboard */; };
 		49C22AAE1A9E109B00583926 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C22AAD1A9E109B00583926 /* Images.xcassets */; };
-		49C22AB11A9E109B00583926 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C22AAF1A9E109B00583926 /* LaunchScreen.xib */; };
 		49C22ABD1A9E109B00583926 /* HypnoNerdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C22ABC1A9E109B00583926 /* HypnoNerdTests.m */; };
+		49C22AC81A9E10FA00583926 /* HAHNHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C22AC71A9E10FA00583926 /* HAHNHypnosisView.m */; };
+		49C22ACB1A9E12CB00583926 /* HAHNHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C22ACA1A9E12CB00583926 /* HAHNHypnosisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,14 @@
 		49C22AA51A9E109B00583926 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		49C22AA71A9E109B00583926 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		49C22AA81A9E109B00583926 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		49C22AAB1A9E109B00583926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49C22AAD1A9E109B00583926 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		49C22AB01A9E109B00583926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		49C22AB61A9E109B00583926 /* HypnoNerdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnoNerdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C22ABB1A9E109B00583926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49C22ABC1A9E109B00583926 /* HypnoNerdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoNerdTests.m; sourceTree = "<group>"; };
+		49C22AC61A9E10FA00583926 /* HAHNHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAHNHypnosisView.h; sourceTree = "<group>"; };
+		49C22AC71A9E10FA00583926 /* HAHNHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAHNHypnosisView.m; sourceTree = "<group>"; };
+		49C22AC91A9E12CB00583926 /* HAHNHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAHNHypnosisViewController.h; sourceTree = "<group>"; };
+		49C22ACA1A9E12CB00583926 /* HAHNHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAHNHypnosisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +83,15 @@
 		49C22A9F1A9E109B00583926 /* HypnoNerd */ = {
 			isa = PBXGroup;
 			children = (
+				49C22AC61A9E10FA00583926 /* HAHNHypnosisView.h */,
+				49C22AC71A9E10FA00583926 /* HAHNHypnosisView.m */,
 				49C22AA41A9E109B00583926 /* AppDelegate.h */,
 				49C22AA51A9E109B00583926 /* AppDelegate.m */,
+				49C22AC91A9E12CB00583926 /* HAHNHypnosisViewController.h */,
+				49C22ACA1A9E12CB00583926 /* HAHNHypnosisViewController.m */,
 				49C22AA71A9E109B00583926 /* ViewController.h */,
 				49C22AA81A9E109B00583926 /* ViewController.m */,
-				49C22AAA1A9E109B00583926 /* Main.storyboard */,
 				49C22AAD1A9E109B00583926 /* Images.xcassets */,
-				49C22AAF1A9E109B00583926 /* LaunchScreen.xib */,
 				49C22AA01A9E109B00583926 /* Supporting Files */,
 			);
 			path = HypnoNerd;
@@ -199,8 +203,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C22AAC1A9E109B00583926 /* Main.storyboard in Resources */,
-				49C22AB11A9E109B00583926 /* LaunchScreen.xib in Resources */,
 				49C22AAE1A9E109B00583926 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C22AC81A9E10FA00583926 /* HAHNHypnosisView.m in Sources */,
+				49C22ACB1A9E12CB00583926 /* HAHNHypnosisViewController.m in Sources */,
 				49C22AA91A9E109B00583926 /* ViewController.m in Sources */,
 				49C22AA61A9E109B00583926 /* AppDelegate.m in Sources */,
 				49C22AA31A9E109B00583926 /* main.m in Sources */,
@@ -242,25 +246,6 @@
 			targetProxy = 49C22AB71A9E109B00583926 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		49C22AAA1A9E109B00583926 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				49C22AAB1A9E109B00583926 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		49C22AAF1A9E109B00583926 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				49C22AB01A9E109B00583926 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		49C22ABE1A9E109B00583926 /* Debug */ = {
@@ -412,6 +397,7 @@
 				49C22AC21A9E109B00583926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49C22AC31A9E109B00583926 /* Build configuration list for PBXNativeTarget "HypnoNerdTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +406,7 @@
 				49C22AC51A9E109B00583926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
