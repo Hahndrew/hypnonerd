@@ -14,6 +14,8 @@
 		49C22ABD1A9E109B00583926 /* HypnoNerdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C22ABC1A9E109B00583926 /* HypnoNerdTests.m */; };
 		49C22AC81A9E10FA00583926 /* HAHNHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C22AC71A9E10FA00583926 /* HAHNHypnosisView.m */; };
 		49C22ACB1A9E12CB00583926 /* HAHNHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C22ACA1A9E12CB00583926 /* HAHNHypnosisViewController.m */; };
+		49C33B741AB9BABA004F8C8C /* HAHNReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C33B731AB9BABA004F8C8C /* HAHNReminderViewController.m */; };
+		49C33B761AB9BDDC004F8C8C /* HAHNReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C33B751AB9BDDC004F8C8C /* HAHNReminderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		49C22AC71A9E10FA00583926 /* HAHNHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAHNHypnosisView.m; sourceTree = "<group>"; };
 		49C22AC91A9E12CB00583926 /* HAHNHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAHNHypnosisViewController.h; sourceTree = "<group>"; };
 		49C22ACA1A9E12CB00583926 /* HAHNHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAHNHypnosisViewController.m; sourceTree = "<group>"; };
+		49C33B721AB9BABA004F8C8C /* HAHNReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAHNReminderViewController.h; path = ../HAHNReminderViewController.h; sourceTree = "<group>"; };
+		49C33B731AB9BABA004F8C8C /* HAHNReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAHNReminderViewController.m; path = ../HAHNReminderViewController.m; sourceTree = "<group>"; };
+		49C33B751AB9BDDC004F8C8C /* HAHNReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAHNReminderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				49C22AA51A9E109B00583926 /* AppDelegate.m */,
 				49C22AC91A9E12CB00583926 /* HAHNHypnosisViewController.h */,
 				49C22ACA1A9E12CB00583926 /* HAHNHypnosisViewController.m */,
+				49C33B721AB9BABA004F8C8C /* HAHNReminderViewController.h */,
+				49C33B731AB9BABA004F8C8C /* HAHNReminderViewController.m */,
+				49C33B751AB9BDDC004F8C8C /* HAHNReminderViewController.xib */,
 				49C22AA71A9E109B00583926 /* ViewController.h */,
 				49C22AA81A9E109B00583926 /* ViewController.m */,
 				49C22AAD1A9E109B00583926 /* Images.xcassets */,
@@ -204,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C22AAE1A9E109B00583926 /* Images.xcassets in Resources */,
+				49C33B761AB9BDDC004F8C8C /* HAHNReminderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +235,7 @@
 				49C22AA91A9E109B00583926 /* ViewController.m in Sources */,
 				49C22AA61A9E109B00583926 /* AppDelegate.m in Sources */,
 				49C22AA31A9E109B00583926 /* main.m in Sources */,
+				49C33B741AB9BABA004F8C8C /* HAHNReminderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
