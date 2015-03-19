@@ -31,8 +31,15 @@
                                        initWithNibName:@"HAHNReminderViewController"
                                                 bundle:appBundle];
     
-    self.window.rootViewController = rvc;
+    // Make a TabBarController
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
+    // Add HAHNHypnosisViewController and HAHNReminderViewController to TabBarController's array
+    tabBarController.viewControllers = @[hvc, rvc];
+    
+    // Set tabBarController to be the root view controller
+    self.window.rootViewController = tabBarController;
+        
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -61,3 +68,8 @@
 }
 
 @end
+
+
+// To do
+// - fix screen size issue
+// - UIViewController Initializers

@@ -21,7 +21,7 @@
                         <!--2015-03-18 14:42:08 +0000-->
                     </date>
                     <variation key="heightClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="0.0" y="67" width="320" height="216"/>
+                        <rect key="frame" x="0.0" y="89" width="375" height="216"/>
                     </variation>
                 </datePicker>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1a-R2-jxn">
@@ -30,7 +30,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <variation key="heightClass=regular" fixedFrame="YES">
-                        <rect key="frame" x="48" y="317" width="224" height="57"/>
+                        <rect key="frame" x="75" y="352" width="224" height="57"/>
                     </variation>
                     <connections>
                         <action selector="addReminder:" destination="-1" eventType="touchUpInside" id="XOc-hG-Ygu"/>
@@ -38,7 +38,7 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="Peo-J2-rgF"/>
@@ -51,7 +51,7 @@
                     <include reference="D1a-R2-jxn"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="382" y="465"/>
+            <point key="canvasLocation" x="381.5" y="457.5"/>
         </view>
     </objects>
 </document>
