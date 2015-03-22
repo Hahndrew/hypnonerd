@@ -43,4 +43,13 @@
     return self;
 }
 
+// Override the viewDidLoad method to see view is only loaded when user taps the tab (lazy loading)
+- (void)viewDidLoad
+{
+    // Always call the super implementation of viewDidLoad
+    [super viewDidLoad];
+    
+    NSLog(@"HAHNHypnosisViewController loaded its view.");
+}
+
 @end
