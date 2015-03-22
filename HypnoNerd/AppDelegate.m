@@ -21,15 +21,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    // Doesn't need NibName and bundle because view is created programmatically
     HAHNHypnosisViewController *hvc = [[HAHNHypnosisViewController alloc] init];
     
-    // This will get a pointer to an object that represents the app bundle
-    NSBundle *appBundle = [NSBundle mainBundle];
+    // When a view controller is initialized with nil as its NIB name, it searches
+    // for a NIB file with the name of the class - so it's important to name the xib file appropriately
+    HAHNReminderViewController *rvc = [[HAHNReminderViewController alloc] init];
     
-    // Look in the appBundle for the file HAHNReminderViewController.xib
-    HAHNReminderViewController *rvc = [[HAHNReminderViewController alloc]
-                                       initWithNibName:@"HAHNReminderViewController"
-                                                bundle:appBundle];
     
     // Make a TabBarController
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
