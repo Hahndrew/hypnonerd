@@ -20,6 +20,18 @@
 {
     NSDate *date = self.datePicker.date;
     NSLog(@"Setting a reminder for %@", date);
+    
+    // Adding a local notification
+    UILocalNotification *note = [[UILocalNotification alloc] init];
+    note.alertBody = @"Hypnotize me!";
+    note.fireDate = date;
+    
+    // register notification - required in iOS8
+    [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:1 << 2
+                                                                                                             categories:nil]];
+    
+    // Schedule the local notification
+    [[UIApplication sharedApplication] scheduleLocalNotification:note];
 }
 
 // Override UIViewController's designated initializer, initWithNibName:bundle:
