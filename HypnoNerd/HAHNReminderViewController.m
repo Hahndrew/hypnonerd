@@ -64,4 +64,12 @@
     NSLog(@"HAHNReminderViewController loaded its view.");
 }
 
+// Override viewWillAppear: to set the minimumDate of the date picker
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:60];
+}
+
 @end
