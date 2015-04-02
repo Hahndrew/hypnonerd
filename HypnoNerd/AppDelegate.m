@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HAHNHypnosisViewController.h"
 #import "HAHNReminderViewController.h"
+#import "AGHQuizViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,12 +29,13 @@
     // for a NIB file with the name of the class - so it's important to name the xib file appropriately
     HAHNReminderViewController *rvc = [[HAHNReminderViewController alloc] init];
     
+    AGHQuizViewController *qvc = [[AGHQuizViewController alloc] init];
     
     // Make a TabBarController
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
     // Add HAHNHypnosisViewController and HAHNReminderViewController to TabBarController's array
-    tabBarController.viewControllers = @[hvc, rvc];
+    tabBarController.viewControllers = @[hvc, rvc, qvc];
     
     // Set tabBarController to be the root view controller
     self.window.rootViewController = tabBarController;
