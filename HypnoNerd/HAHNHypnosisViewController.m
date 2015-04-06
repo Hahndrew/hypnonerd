@@ -50,6 +50,25 @@
     [super viewDidLoad];
     
     NSLog(@"HAHNHypnosisViewController loaded its view.");
+    
+    /* Silver Challenge - Controller Logic
+       Add a UISegmentedControl for red, green, blue.
+       circleColor changes correspondingly when user tabs each segment. */
+    
+    // Create an array to store the values for each segment
+    NSArray *arrayForSegmentedControl = [[NSArray alloc] initWithObjects:@"Red", @"Green", @"Blue", nil];
+    // Initialize the segment using the array
+    UISegmentedControl *segmentedControl  = [[UISegmentedControl alloc] initWithItems:arrayForSegmentedControl];
+    // Assign it a location on the screen & size the control
+    segmentedControl.frame = CGRectMake(35, 50, 250, 25);
+    
+    // Point it towards a method that is called when the user interacts with it
+    [segmentedControl addTarget:self.view
+                         action:@selector(selectCircleColor:)
+               forControlEvents:UIControlEventValueChanged];
+    // Add as a subview
+    [self.view addSubview:segmentedControl];
 }
+
 
 @end

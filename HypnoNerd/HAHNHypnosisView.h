@@ -10,4 +10,7 @@
 
 @interface HAHNHypnosisView : UIView
 
+// target-action for segment controller
+- (void)selectCircleColor:(UISegmentedControl *)segment;
+
 @end

@@ -119,6 +119,24 @@
     [self setNeedsDisplay];
 }
 
+// target method for segmentedControl (from HAHNHypnosisViewController)
+- (void)selectCircleColor:(UISegmentedControl *)segment
+{
+    switch (segment.selectedSegmentIndex) {
+        case 0:
+            self.circleColor = [UIColor redColor];
+            break;
+        case 1:
+            self.circleColor = [UIColor greenColor];
+            break;
+        case 2:
+            self.circleColor = [UIColor blueColor];
+            break;
+        default:
+            break;
+    }
+}
+
 
 
 
