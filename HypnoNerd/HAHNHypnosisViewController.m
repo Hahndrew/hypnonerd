@@ -17,6 +17,17 @@
     CGRect frame = [UIScreen mainScreen].bounds;
     HAHNHypnosisView *backgroundView = [[HAHNHypnosisView alloc] initWithFrame:frame];
     
+    /* Add a UITextField to view */
+    CGRect textFieldRect = CGRectMake(40, 85, 240, 30);
+    UITextField *textField = [[UITextField alloc] initWithFrame:textFieldRect];
+    // Setting the border sytle on the text field will allow us to see it more easily
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    // Give the text field some placeholder text and modify the keyboard's return type
+    textField.placeholder = @"Hypnotize me";
+    textField.returnKeyType = UIReturnKeyDone;
+    
+    [backgroundView addSubview:textField];
+    
     // Set it as *the* view of this view controller
     self.view = backgroundView;
 }
