@@ -26,6 +26,7 @@
     textField.placeholder = @"Hypnotize me";
     textField.returnKeyType = UIReturnKeyDone;
     
+    // Add the tectField as a subview
     [backgroundView addSubview:textField];
     
     // Set it as *the* view of this view controller
