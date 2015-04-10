@@ -9,6 +9,10 @@
 #import "HAHNHypnosisViewController.h"
 #import "HAHNHypnosisView.h"
 
+// Declare that HAHNHypnosisViewController conforms to the UITextFieldDelegate protocol
+@interface HAHNHypnosisViewController () <UITextFieldDelegate>
+@end
+
 @implementation HAHNHypnosisViewController
 
 - (void)loadView
@@ -25,6 +29,9 @@
     // Give the text field some placeholder text and modify the keyboard's return type
     textField.placeholder = @"Hypnotize me";
     textField.returnKeyType = UIReturnKeyDone;
+    
+    // set the delegate property of the UITextField to point at the HAHNHypnosisViewController
+    textField.delegate = self;
     
     [backgroundView addSubview:textField];
     
@@ -79,6 +86,13 @@
                forControlEvents:UIControlEventValueChanged];
     // Add as a subview
     [self.view addSubview:segmentedControl];
+}
+
+// Implementing the method to be called when the user taps the Done button
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    NSLog(@"%@", textField.text);
+    return YES;
 }
 
 
