@@ -91,8 +91,49 @@
 // Implementing the method to be called when the user taps the Done button
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    NSLog(@"%@", textField.text);
+    // Pass in the field's text
+    [self drawHypnoticMessage:textField.text];
+    
+    // clear the text that the user typed
+    textField.text = @"";
+    
+    // dismiss the keyboard
+    [textField resignFirstResponder];
+    
     return YES;
+}
+
+// Draw a given string on the screen twenty times at random positions
+- (void)drawHypnoticMessage:(NSString *)message
+{
+    for (int i = 0; i < 20; i++) {
+        UILabel *messageLabel = [[UILabel alloc] init];
+        
+        // Configure the label's colors and text
+        messageLabel.backgroundColor = [UIColor clearColor];
+        messageLabel.textColor = [UIColor whiteColor];
+        messageLabel.text = message;
+        
+        // This method resizes the label, which will be relative
+        // to the text that it is displaying
+        [messageLabel sizeToFit];
+        
+        // Get a random x value that fits within the hypnosis view's width
+        int width = self.view.bounds.size.width - messageLabel.bounds.size.width;
+        int x = arc4random() % width;
+        
+        // Get a random y value that fits within the hypnosis view's height
+        int height = self.view.bounds.size.width - messageLabel.bounds.size.height;
+        int y = arc4random() % height;
+        
+        // Update the label's frame
+        CGRect frame = messageLabel.frame;
+        frame.origin = CGPointMake(x, y);
+        messageLabel.frame = frame;
+        
+        // Add the label to the hierarchy
+        [self.view addSubview:messageLabel];
+    }
 }
 
 
