@@ -133,6 +133,21 @@
         
         // Add the label to the hierarchy
         [self.view addSubview:messageLabel];
+        
+        // add a vertical and horizontal motion effect to each label
+        // that allows its center to sway 25 points in either direction
+        UIInterpolatingMotionEffect *motionEffect;
+        motionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x"
+                                                                       type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+        motionEffect.minimumRelativeValue = @-25;
+        motionEffect.maximumRelativeValue = @25;
+        [messageLabel addMotionEffect:motionEffect];
+        
+        motionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y"
+                                                                       type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+        motionEffect.minimumRelativeValue = @-25;
+        motionEffect.maximumRelativeValue = @25;
+        [messageLabel addMotionEffect:motionEffect];
     }
 }
 
